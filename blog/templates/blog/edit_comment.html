@@ -1,0 +1,17 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Modifier le commentaire{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Modifier le commentaire</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+            <a href="{% url 'post_detail' comment.post.id %}" class="btn btn-secondary">Annuler</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

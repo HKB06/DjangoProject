@@ -1,0 +1,8 @@
+# Environnement virtuel
+env/
+
+# Fichiers de base de données
+db.sqlite3
+
+# Migrations
+**/migrations/

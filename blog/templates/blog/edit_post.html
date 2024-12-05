@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Modifier l'article{% endblock %}
+
+{% block content %}
+<h1>Modifier l'article</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enregistrer les modifications</button>
+    <a href="{% url 'post_list' %}"><button type="button">Annuler</button></a>
+</form>
+{% endblock %}
