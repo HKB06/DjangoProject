@@ -78,4 +78,4 @@ Création, modification et suppression d’articles.
 Ajout, modification et suppression de commentaires.
 Vérification des redirections et du rendu des templates
 
-Fait par Hugo khaled Broton Et Nail 
+Fait par Hugo khaled Broton Et Nail Benamer
